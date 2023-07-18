@@ -1,0 +1,15 @@
+.floating-chat {
+    position: fixed;
+    z-index: 6;
+    bottom: 30px;
+    right: 30px;
+    background-color: #ebe1f9;
+    padding: 12px 12px;
+    border-radius: 30px;
+    transition: 0.4s ease;
+}
+
+.floating-chat:hover {
+    transform: translateY(-10px);
+    transition: 0.4s ease;
+}

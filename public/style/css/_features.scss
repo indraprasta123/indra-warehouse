@@ -1,0 +1,209 @@
+.features {
+    padding-top: 64px;
+    padding-bottom: 40px;
+    &__head {
+        text-align: center;
+        margin-bottom: 48px;
+        &__title {
+            margin-bottom: 32px;
+            font-weight: 700;
+            font-size: 3rem;
+        }
+        &__desc {
+            margin-bottom: 0;
+            max-width: 584px;
+            margin-left: auto;
+            margin-right: auto;
+            font-weight: 500;
+            color: #4b5d68;
+            font-size: 1.8rem;
+            line-height: 2.8rem;
+            
+        }
+    }
+    &__body {
+        margin-left: -24px;
+        margin-right: -24px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    &__box {
+        display: flex;
+        align-items: center;
+    }
+    &__item {
+        width: 34rem;
+        padding: 24px;
+        margin-left: 4rem;
+        display: flex;
+    }
+    &__item:nth-child(1) {
+        background-image: url(https://www.alpha-x.id/portofolios/alpin/data-warehouse/assets/img/bg/f-bg-1.svg);
+        background-repeat: no-repeat;
+        background-position: center right;
+        background-size: contain;
+        margin-bottom: 5rem;
+    }
+    &__item:nth-child(2) {
+        background-image: url(https://www.alpha-x.id/portofolios/alpin/data-warehouse/assets/img/bg/f-bg-2.svg);
+        background-repeat: no-repeat;
+        background-position: center right;
+        background-size: contain;
+        margin-bottom: 5rem;
+    }
+    &__item:nth-child(3) {
+        background-image: url(https://www.alpha-x.id/portofolios/alpin/data-warehouse/assets/img/bg/f-bg-3.svg);
+        background-repeat: no-repeat;
+        background-position: center right;
+        background-size: contain;
+    }
+    &__item:nth-child(4) {
+        background-image: url(https://www.alpha-x.id/portofolios/alpin/data-warehouse/assets/img/bg/f-bg-4.svg);
+        background-repeat: no-repeat;
+        background-position: center right;
+        background-size: contain;
+    }
+    &__img {
+        width: 44%;
+        display: inline-block;
+        padding-right: 18px;
+        &__el {
+            max-width: 100%;
+            border-style: none;
+            font-size: 1.2rem;
+        }
+    }
+    &__txt {
+        display: inline-block;
+        position: relative;
+        width: 56%;
+        &__title {
+            font-family: Helvetica,sans-serif;
+            font-weight: 400;
+            margin-bottom: 25px;
+            font-size: 20px;
+        }
+        &__box {
+            height: 144px;
+            margin-bottom: 10px;
+        }
+        &__desc {
+            color: #4b5d68;
+            margin-bottom: 0;
+            font-size: 15px;
+            line-height: 25px;
+            -webkit-line-clamp: 4;
+            -webkit-box-orient: vertical;
+            display: -webkit-box;
+        }
+        &__link {
+            color: black;
+            text-decoration: none;
+            position: relative;
+            bottom: 1rem;
+            font-size: 1.6rem;
+            line-height: 2.4rem;
+            font-weight: bold;
+            #arrow-right {
+                margin-left: 1rem;
+                color: #9c69e2;
+                font-size: 20px;
+                transition: 0.5s;
+            }
+            #arrow-right:hover {
+                margin-left: 1.5rem;
+                transition: 0.5s;
+            }
+        }
+    }
+
+}
+
+@media only screen and (max-width: 990px) {
+    .features {
+        .container {
+            padding: 20px 30px;
+        }
+        padding-top: 40px;
+        padding-bottom: 40px;
+        &__body { 
+            margin-left: -32px;
+            margin-right: -32px;
+            padding-left: 32px;
+            padding-right: 32px;
+            overflow-y: hidden;
+            overflow-x: scroll;
+            flex-wrap: nowrap;
+        }
+        ::-webkit-scrollbar {
+            display: none;
+        }
+        &__item {
+            width: 480px;
+            margin-right: 32px;
+            background-size: contain;
+            display: flex;
+            margin-bottom: 5rem;
+        }
+        &__item:nth-child(1) {
+            margin-left: 82rem;
+        }
+        &__box {
+            width: 33rem;
+            display: flex;
+            align-items: center;
+        }
+        &__txt {
+            padding: 0;
+            width: 50%;
+            &__box {
+                width: 15rem;
+            }
+            &__desc {
+                font-size: 15px;
+                line-height: 22px;
+                overflow: hidden;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1120px) {
+    .features {
+        &__item {
+            width: 32rem;
+            padding: 0;
+        }
+    }
+}
+
+@media only screen and (max-width: 880px) {
+    .features__item:nth-child(1) {
+        margin-left: 92rem;
+    }
+}
+@media only screen and (max-width: 720px) {
+    .features__item:nth-child(1) {
+        margin-left: 97rem;
+    }
+    .features__txt__box {
+        width: 16rem;
+        height: 10rem;
+    }
+}
+@media only screen and (max-width: 575px) {
+    .features {
+        &__item:nth-child(1) {
+            margin-left: 107rem;
+        }
+    }
+}
+
+@media only screen and (max-width: 490px) {
+    .features {
+        &__item:nth-child(1) {
+            margin-left: 122rem;
+        }
+    }
+}
